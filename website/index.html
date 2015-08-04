@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/cycle2.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="Masthead">
+        <header>
+            <h1>Logo</h1>
+            <nav>
+                <ul>
+                   <li><a href="#" title="Home">Home</a></li>
+                    <li><a href="#" title="Products">Products</a>
+                        <ul>
+                            <li><a href="#" title="Bows">Bows</a></li><!--
+                            --><li><a href="#" title="Bands">Bands</a></li><!--
+                            --><li><a href="#" title="Beads">Beads</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" title="Learn How to Make Jewelry">Videos</a></li>
+                    <li><a href="#" title="About Us">About</a></li>
+                    <li><a href="#" title="Contact Us">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="clear"></div>
+        <main>
+            <div class="cycle-slideshow" data-cycle-pager=".cycle-pager" data-cycle-pause-on-hover="true">
+                <div class="cycle-overlay"></div>
+                <img src="http://lorempixel.com/800/800/nature" alt="picture" data-cycle-title="Nature" data-cycle-desc="Nice Nature">
+                <img src="http://lorempixel.com/800/800/abstract" alt="picture" data-cycle-title="Abstract" data-cycle-desc="Crazy Art">
+                <img src="http://lorempixel.com/800/800/animals" alt="picture" data-cycle-title="Animals" data-cycle-desc="Cute Animals">
+                <img src="http://lorempixel.com/800/800/cats" alt="picture" data-cycle-title="Cats" data-cycle-desc="Cute Cats">
+                <img src="http://lorempixel.com/800/800/food" alt="picture" data-cycle-title="Food" data-cycle-desc="Delicious Food">
+            </div>
+            <div class="cycle-pager"></div>
+               <figure>
+                <img class="img" src="http://lorempixel.com/800/800/nature" alt="picture" data-cycle-title="Nature" data-cycle-desc="Nice Nature">
+                <figcaption>Nature</figcaption>
+               </figure>
+               <figure>
+                <img class="img" src="http://lorempixel.com/800/800/abstract" alt="picture" data-cycle-title="Abstract" data-cycle-desc="Crazy                     Art">
+                <figcaption>Abstract</figcaption>
+               </figure>
+               <figure>
+                <img class="img" src="http://lorempixel.com/800/800/animals" alt="picture" data-cycle-title="Animals" data-cycle-desc="Cute                       Animals">
+                <figcaption>Animals</figcaption>
+               </figure>
+               <figure>
+                <img class="img" src="http://lorempixel.com/800/800/cats" alt="picture" data-cycle-title="Cats" data-cycle-desc="Cute Cats">
+                <figcaption>Cats</figcaption>
+               </figure>
+               <figure>
+                <img class="img" src="http://lorempixel.com/800/800/food" alt="picture" data-cycle-title="Food" data-cycle-desc="Delicious Food">
+                <figcaption>Food</figcaption>
+               </figure>
+            <div class="clear"></div>        
+        </main>
+        <div class="clear"></div>
+        <footer>
+            <p id="Facebook">Facebook</p>
+            <p id="Twitter">Twitter</p>
+            <p id="Google">Google+</p>
+            <p id="Words">Created by: Daniel Chevy Copyright &copy; All rights reserved</p>
+        </footer>
+        <div class="clear"></div>
+    </div>
+    <!--Script Loading-->
+    <script src="js/jQuery.js"></script>
+    <script src="js/cycle2.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+*{
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;   
+}
+
+/* Stay footer */
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#Masthead{
+    min-height: 100%;
+    position: relative;
+}
+
+main{
+    padding-bottom: 84px;
+}
+
+footer{
+    width: 100%;
+	height: 84px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+/* Start Styles */
+
+body{
+    background: url(../img/greenb.jpg);
+    background-color: #AFE604;
+}
+
+header{
+    background-color: #303030;
+}
+
+h1{
+    margin: 0;
+    background: url(http://www.joshbryantdesign.com/mobile/logo.jpg) no-repeat;
+    border-radius: 15px;
+    background-size: 700px 250px;
+    min-height: 84px;
+    width: 700px;
+    margin: 0 auto;
+    text-indent: -9999px;
+    background-size: 100%;
+
+}
+
+nav ul li{
+    list-style: none;
+    float: left;
+    width: 20%;
+}
+
+nav ul li a{
+    background-color: #303030;
+    color: #ffffff;
+    display: block;
+    border: 1px solid gray;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    color: #00bbff;
+    background-color: #505050;
+}
+
+nav ul li ul{
+    left: -9999px;
+    position: absolute;
+    clear: both;
+    width: 20%;
+}
+
+nav ul li:hover ul{
+    left: 20%;
+    z-index: 200;
+    -webkit-animation: fadeIn 0.25s;
+    animation: fadeIn 0.25s;
+}
+
+nav ul ul li{
+    float: none;
+    width: 100%;
+}
+
+nav ul ul li a{
+    background-color: #404040;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    min-height: 20px;
+}
+
+footer{
+    background-color: #303030;
+    color: #606060;
+}
+
+footer p{
+    margin: 0;
+    float: left;
+}
+
+#Words{
+    margin: 32px 0;
+    margin-left: 10px;
+}
+
+#Facebook,#Twitter,#Google{
+    width: 33%;
+    padding: 0;
+    display: block;
+    width: 84px;
+    height: 84px;
+    text-indent: -9999px;
+}
+
+#Facebook{
+    background: url(../img/sprites.png);
+    background-position: 0px 0px;
+}
+
+#Twitter{
+    background: url(../img/sprites.png);
+    background-position: 252px 0;
+}
+
+#Google{
+    background: url(../img/sprites.png);
+    background-position: 672px 0;
+}
+
+#Facebook:hover{
+    background-position: 0px -84px;
+}
+
+#Twitter:hover{
+    background-position: 252px -84px;
+}
+
+#Google:hover{
+    background-position: 672px -84px;
+}
+
+main img{
+    padding: 0 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+figure{
+    display: none;
+}
+
+/* Cycle2 Styles */
+.cycle-pager span.cycle-pager-active {
+    color: #D69746;
+}
+
+.cycle-pager span { 
+    color: #a9aa9b;
+}
+
+/* Animation */
+
+@-webkit-keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+/* Media Query Stuff */
+
+@media screen and (max-width: 768px) {
+    main{
+        padding-bottom: 168px;
+    }
+    
+    footer{
+        min-height: 168px;
+    }
+    
+    .cycle-slideshow, .cycle-pager{
+        display: none;
+    }
+    
+    .img{
+        display: block;
+        padding: 5px;
+    }
+    
+    figure{
+        display: inline-block;
+    }
+    
+    h1{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 419px) {
+    main{
+        padding-bottom: 186px;
+    }
+    footer{
+        min-height: 186px;
+    }
+    
+    nav ul li{
+        float: none;
+        width: 100%;
+    }
+    
+    nav ul li a{
+        min-height: 30px;
+        line-height: 30px;
+    }
+
+    nav ul li ul{
+        left: -9999px;
+        width: 100%;
+    }
+
+    nav ul li:hover ul{
+        left: 0;
+        position: relative;
+    }
+
+    nav ul ul li{
+        float: none;
+        width: 100%;
+    }
+    }
